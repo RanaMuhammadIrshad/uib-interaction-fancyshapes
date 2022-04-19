@@ -1,0 +1,38 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin-top: 10px;
+}
+p {
+  background-color: #00ffff;
+}
+
+.task-one p::before {
+  content: "Once upon a time ...";
+  background-color: #7575f1;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.task-one p::after {
+  content: "... The end";
+  background-color: #7575f1;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.task-two {
+  background-image: url("assets/beach.jpg");
+  width: 400px;
+  height: 400px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.task-three img {
+  transform: rotate(180deg);
+  background-size: contain;
+}
